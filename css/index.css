@@ -2567,3 +2567,7 @@ for tabs and large phones
         transition: all .4s ease;
     }
 }
+
+.text-30{
+    font-size: 30px;
+}
