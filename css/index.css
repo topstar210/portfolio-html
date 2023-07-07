@@ -1164,7 +1164,7 @@ button:hover .index {
     font-size: 18px;
     opacity: .9;
     font-weight: 400;
-    height: 80%;
+    height: 63%;
     padding: 30px;
     letter-spacing: 1px;
 }
@@ -2957,18 +2957,39 @@ for tabs and large phones
 
 /* Style the buttons */
 .btn {
-    border: none;
-    outline: none;
+    opacity: .8;
+    font-weight: 200;
     padding: 5px 10px;
-    background-color: #f1f1f1;
+    background: transparent;
+    color: #c70039;
+    transition: all .4s ease;
+    outline: none;
+    border: 1.5px solid #c70039;
     cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: all .4s ease;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 200%;
+    transform: rotate(-15deg) translateY(-20px);
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background: #c70039;
+    transition: all .7s ease;
 }
 
 .btn:hover {
-    background-color: #ddd;
+    opacity: 1;
+    color: whitesmoke;
 }
 
-.btn.active {
-    background-color: #666;
-    color: white;
+.btn:hover::before {
+    opacity: 1;
+    width: 120%;
 }

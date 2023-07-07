@@ -76,3 +76,11 @@ form button{
         box-shadow:0px 0px 0px 0px #c70039 ;
     }
 }
+.btn{
+    color: #c70039;
+    border: 1.5px solid #c70039;
+}
+
+.btn::before{
+    background: #c70039;
+}
