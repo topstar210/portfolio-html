@@ -11,7 +11,6 @@
     <title>Genda Hideyoshi</title>
     <!--favicon-img-->
     <link rel="icon" type="image/png" href="./icons/favicon.png">
-    <link rel="stylesheet" href="./css/nice.select.css">
     <link rel="stylesheet" href="./css/index.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
 </head>
@@ -68,10 +67,14 @@
             <div id="particles"></div>
             <!--Social Media Links-->
             <div class="social-media-links">
-                <a href="https://t.me/AlSmile0210" target="_blank"><img src="./icons/telegram.png" class="social-media" alt="telegram-logo"></a>
-                <a href="https://join.skype.com/invite/u7wpUCf5vKVC" target="_blank"><img src="./icons/skype.png" class="social-media" alt="skype-logo"></a>
-                <a href="https://www.linkedin.com/in/genda-hideyosii-6b574b251" target="_blank"><img src="./icons/linkedin logo.png" class="social-media" alt="linkedin-logo"></a>
-                <a href="https://github.com/topstar210" target="_blank"><img src="./icons/github.png" class="social-media" alt="github-logo"></a>
+                <a href="https://t.me/AlSmile0210" target="_blank"><img src="./icons/telegram.png" class="social-media"
+                        alt="telegram-logo"></a>
+                <a href="https://join.skype.com/invite/u7wpUCf5vKVC" target="_blank"><img src="./icons/skype.png"
+                        class="social-media" alt="skype-logo"></a>
+                <a href="https://www.linkedin.com/in/genda-hideyosii-6b574b251" target="_blank"><img
+                        src="./icons/linkedin logo.png" class="social-media" alt="linkedin-logo"></a>
+                <a href="https://github.com/topstar210" target="_blank"><img src="./icons/github.png"
+                        class="social-media" alt="github-logo"></a>
 
             </div>
             <!--Social Media Links end-->
@@ -85,8 +88,8 @@
                         <span class="slash">|</span>
                     </div>
                     <div class="contact">
-                        <a href="Mailto:topstar20210@gmail.com"><img src="./icons/email.png" width="26" height="16" alt="email-pic"
-                                class="contactpic"></a><!--Your email Id write in place of "#"-->
+                        <a href="Mailto:topstar20210@gmail.com"><img src="./icons/email.png" width="26" height="16"
+                                alt="email-pic" class="contactpic"></a><!--Your email Id write in place of "#"-->
                         <a href="Tel:#"><img src="./icons/call.png" alt="phone-pic"
                                 class="contactpic"></a><!--Your telephone number Id write in place of "#"-->
                     </div>
@@ -143,15 +146,17 @@
                     <div class="about-first-paragraph wow">
                         <!--about description-->
                         <span class="about-first-line text-30">
-                            I'm an open-minded 
+                            I'm an open-minded
                             <span class="color">full stack developer</span>
                             who's ready for new challenges </span>
                         <br>
-                        <span class="about-second-line"> With 9 years of experience as a professional Full stack developer, I
+                        <span class="about-second-line"> With 9 years of experience as a professional Full stack
+                            developer, I
                             have acquired the skills and knowledge necessary to make your project a success. I enjoy
                             every step while working.</span>
                         <div class="cv">
-                            <a href="./resume/GendaHideyosiiResume.pdf" download="true" target="_blank"><button>Download <span class="colors">CV</span></button></a>
+                            <a href="./resume/GendaHideyosiiResume.pdf" download="true" target="_blank"><button>Download
+                                    <span class="colors">CV</span></button></a>
                         </div>
                     </div>
                     <!--about picture-->
@@ -206,7 +211,8 @@
                         </div>
                         <div class="service-description">
                             <h2>Frontend Development</h2>
-                            <p>Determining the structure and design of web pages, striking a balance between functional and aesthetic design, and ensuring web design is optimized for smartphones</p>
+                            <p>Determining the structure and design of web pages, striking a balance between functional
+                                and aesthetic design, and ensuring web design is optimized for smartphones</p>
                         </div>
                     </div>
                     <div class="service-two service wow">
@@ -215,7 +221,8 @@
                         </div>
                         <div class="service-description">
                             <h2>Backend Development</h2>
-                            <p>Creating, maintaining, testing, and debugging the entire back end of an application or system</p>
+                            <p>Creating, maintaining, testing, and debugging the entire back end of an application or
+                                system</p>
                         </div>
                     </div>
                     <div class="service-three service wow">
@@ -224,7 +231,8 @@
                         </div>
                         <div class="service-description">
                             <h2>API Integration</h2>
-                            <p>Integrations for services such as payment systems, social networks, geo-services, business tools, email marketing, and more.</p>
+                            <p>Integrations for services such as payment systems, social networks, geo-services,
+                                business tools, email marketing, and more.</p>
                         </div>
                     </div>
                     <div class="service-three service wow">
@@ -242,7 +250,8 @@
                         </div>
                         <div class="service-description">
                             <h2>Dapp Development</h2>
-                            <p>Smart contract development, Staking/Pull site, NFT mint/staking/marketplace site, Token development, Wallet integration, Trading Bot development</p>
+                            <p>Smart contract development, Staking/Pull site, NFT mint/staking/marketplace site, Token
+                                development, Wallet integration, Trading Bot development</p>
                         </div>
                     </div>
                 </div>
@@ -369,17 +378,19 @@
             </div>
             <div class="blog-header"> My Portfolio
                 <span class="header-caption"> Some Of My <span class="color"> Works</span></span>
-                <ul class="gallery_filter list">
-                    <li class="active" data-filter="*"><a href="#">All</a></li>
-                    <li data-filter=".webrtc"><a href="#">WebRTC</a></li>
-                </ul>
+                <div id="BtnContainer">
+                    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                    <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+                    <button class="btn" onclick="filterSelection('animals')"> Animals</button>
+                    <button class="btn" onclick="filterSelection('colors')"> Colors</button>
+                </div>
             </div>
             <div class="blog-content">
-                <div class="blogs webrtc">
+                <div class="blogs filterDiv cars">
                     <a href="#">
                         <div class="img">
-                            <img src="./images/post-one.jpg" alt="blog-one">
-                            <div class="blog-date">8 May,20</div>
+                            <img src="./images/portfolio/harbourbub.png" alt="blog-one">
+                            <div class="blog-date">Renting/Selling Site</div>
                         </div>
                         <div class="blog-text">
                             <h3>Harleys In Hawaai</h3>
@@ -391,79 +402,211 @@
                         </div>
                     </a>
                 </div>
-                <div class="blogs">
+                <div class="blogs filterDiv cars">
                     <a href="#">
                         <div class="img">
-                            <img src="./images/post-two.jpg" alt="blog-two">
-                            <div class="blog-date">16 Jan,20</div>
+                            <img src="./images/portfolio/staking.png" alt="blog-one">
+                            <div class="blog-date">Crypto-Currency Staking</div>
                         </div>
                         <div class="blog-text">
-                            <h3>Key To Be Productive</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt maiores,
-                                recusandae cupiditate ducimus a non tempora, architecto obcaecati eaque ipsum assumenda
-                                harum dolorum iusto tenetur
-                                eius eligendi dolor magnam sit!</p>
+                            <h3>Harleys In Hawaai</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus alias dolore recusandae
+                                illum, corrupti quo
+                                veniam saepe aliquid! Quis voluptates ratione consequuntur vel, perferendis cum
+                                provident? Magnam fugiat voluptas
+                                libero.</p>
                         </div>
                     </a>
                 </div>
-                <div class="blogs">
+                <div class="blogs filterDiv cars">
                     <a href="#">
                         <div class="img">
-                            <img src="./images/post-three.jpg" alt="blog-three">
-                            <div class="blog-date">30 Nov,19</div>
+                            <img src="./images/portfolio/bookingit.io.png" alt="blog-one">
+                            <div class="blog-date">Booking of Restaurant, Cafe...</div>
                         </div>
                         <div class="blog-text">
-                            <h3>Caffeine Addict</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo nostrum impedit
-                                ipsam perspiciatis ratione sapiente quasi optio reprehenderit, labore consequuntur
-                                suscipit cum quas.
-                                Officiis dolorem asperiores, ut necessitatibus quas doloremque?</p>
+                            <h3>Harleys In Hawaai</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus alias dolore recusandae
+                                illum, corrupti quo
+                                veniam saepe aliquid! Quis voluptates ratione consequuntur vel, perferendis cum
+                                provident? Magnam fugiat voluptas
+                                libero.</p>
                         </div>
                     </a>
                 </div>
-                <div class="blogs">
+                <div class="blogs filterDiv cars">
                     <a href="#">
                         <div class="img">
-                            <img src="./images/post-four.jpg" alt="blog-four">
-                            <div class="blog-date">6 Jul,19</div>
+                            <img src="./images/portfolio/paperlink.png" alt="blog-one">
+                            <div class="blog-date">Paperdaz</div>
                         </div>
                         <div class="blog-text">
-                            <h3>Web Development</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, veniam ratione quam
-                                vitae,
-                                quibusdam explicabo rem debitis velit ipsa repellat, impedit nulla fuga? Amet corporis
-                                praesentium quae.
-                                Sed, quibusdam necessitatibus.</p>
+                            <h3>Harleys In Hawaai</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus alias dolore recusandae
+                                illum, corrupti quo
+                                veniam saepe aliquid! Quis voluptates ratione consequuntur vel, perferendis cum
+                                provident? Magnam fugiat voluptas
+                                libero.</p>
                         </div>
                     </a>
                 </div>
-                <div class="blogs">
+                <div class="blogs filterDiv cars">
                     <a href="#">
                         <div class="img">
-                            <img src="./images/post-five.jpg" alt="blog-five">
-                            <div class="blog-date">1 Jun,19</div>
+                            <img src="./images/portfolio/music-app.png" alt="blog-one">
+                            <div class="blog-date">Music APP</div>
                         </div>
                         <div class="blog-text">
-                            <h3>Work From Home</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt eum necessitatibus rem
-                                dignissimos nulla mollitia cumque, provident officiis non vitae? Animi aut doloremque
-                                illum, soluta hic minus
-                                sint explicabo..</p>
+                            <h3>Harleys In Hawaai</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus alias dolore recusandae
+                                illum, corrupti quo
+                                veniam saepe aliquid! Quis voluptates ratione consequuntur vel, perferendis cum
+                                provident? Magnam fugiat voluptas
+                                libero.</p>
                         </div>
                     </a>
                 </div>
-                <div class="blogs">
+                <div class="blogs filterDiv cars">
                     <a href="#">
                         <div class="img">
-                            <img src="./images/post-six.jpg" alt="blog-six">
-                            <div class="blog-date">28 Feb,19</div>
+                            <img src="./images/portfolio/rental.png" alt="blog-one">
+                            <div class="blog-date">Rental of Houses</div>
                         </div>
                         <div class="blog-text">
-                            <h3>Business Trip</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo tempora dolorum fuga
-                                ratione, unde,
-                                ex quaerat iste numquam nemo nihil nobis rem sint quia recusandae dignissimos quos ut
-                                rerum nam.</p>
+                            <h3>Harleys In Hawaai</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus alias dolore recusandae
+                                illum, corrupti quo
+                                veniam saepe aliquid! Quis voluptates ratione consequuntur vel, perferendis cum
+                                provident? Magnam fugiat voluptas
+                                libero.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="blogs filterDiv cars">
+                    <a href="#">
+                        <div class="img">
+                            <img src="./images/portfolio/nft.png" alt="blog-one">
+                            <div class="blog-date">NFT FrontEnd</div>
+                        </div>
+                        <div class="blog-text">
+                            <h3>Harleys In Hawaai</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus alias dolore recusandae
+                                illum, corrupti quo
+                                veniam saepe aliquid! Quis voluptates ratione consequuntur vel, perferendis cum
+                                provident? Magnam fugiat voluptas
+                                libero.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="blogs filterDiv cars">
+                    <a href="#">
+                        <div class="img">
+                            <img src="./images/portfolio/defi.png" alt="blog-one">
+                            <div class="blog-date">Blockchain DeFi</div>
+                        </div>
+                        <div class="blog-text">
+                            <h3>Harleys In Hawaai</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus alias dolore recusandae
+                                illum, corrupti quo
+                                veniam saepe aliquid! Quis voluptates ratione consequuntur vel, perferendis cum
+                                provident? Magnam fugiat voluptas
+                                libero.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="blogs filterDiv cars">
+                    <a href="#">
+                        <div class="img">
+                            <img src="./images/portfolio/video-streaming-1.png" alt="blog-one">
+                            <div class="blog-date">Video Streaming</div>
+                        </div>
+                        <div class="blog-text">
+                            <h3>Harleys In Hawaai</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus alias dolore recusandae
+                                illum, corrupti quo
+                                veniam saepe aliquid! Quis voluptates ratione consequuntur vel, perferendis cum
+                                provident? Magnam fugiat voluptas
+                                libero.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="blogs filterDiv cars">
+                    <a href="#">
+                        <div class="img">
+                            <img src="./images/portfolio/wordrush.png" alt="blog-one">
+                            <div class="blog-date">Wordrush: An action-packed game</div>
+                        </div>
+                        <div class="blog-text">
+                            <h3>Harleys In Hawaai</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus alias dolore recusandae
+                                illum, corrupti quo
+                                veniam saepe aliquid! Quis voluptates ratione consequuntur vel, perferendis cum
+                                provident? Magnam fugiat voluptas
+                                libero.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="blogs filterDiv cars">
+                    <a href="#">
+                        <div class="img">
+                            <img src="./images/portfolio/chatapp.png" alt="blog-one">
+                            <div class="blog-date">Social Chat App</div>
+                        </div>
+                        <div class="blog-text">
+                            <h3>Harleys In Hawaai</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus alias dolore recusandae
+                                illum, corrupti quo
+                                veniam saepe aliquid! Quis voluptates ratione consequuntur vel, perferendis cum
+                                provident? Magnam fugiat voluptas
+                                libero.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="blogs filterDiv cars">
+                    <a href="#">
+                        <div class="img">
+                            <img src="./images/portfolio/game.png" alt="blog-one">
+                            <div class="blog-date">Mini-Game</div>
+                        </div>
+                        <div class="blog-text">
+                            <h3>Harleys In Hawaai</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus alias dolore recusandae
+                                illum, corrupti quo
+                                veniam saepe aliquid! Quis voluptates ratione consequuntur vel, perferendis cum
+                                provident? Magnam fugiat voluptas
+                                libero.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="blogs filterDiv cars">
+                    <a href="#">
+                        <div class="img">
+                            <img src="./images/portfolio/threejs.png" alt="blog-one">
+                            <div class="blog-date">Threejs: Holes cutting on wood</div>
+                        </div>
+                        <div class="blog-text">
+                            <h3>Harleys In Hawaai</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus alias dolore recusandae
+                                illum, corrupti quo
+                                veniam saepe aliquid! Quis voluptates ratione consequuntur vel, perferendis cum
+                                provident? Magnam fugiat voluptas
+                                libero.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="blogs filterDiv cars">
+                    <a href="#">
+                        <div class="img">
+                            <img src="./images/portfolio/recordapp.png" alt="blog-one">
+                            <div class="blog-date">Voice Recorder</div>
+                        </div>
+                        <div class="blog-text">
+                            <h3>Harleys In Hawaai</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus alias dolore recusandae
+                                illum, corrupti quo
+                                veniam saepe aliquid! Quis voluptates ratione consequuntur vel, perferendis cum
+                                provident? Magnam fugiat voluptas
+                                libero.</p>
                         </div>
                     </a>
                 </div>
@@ -681,7 +824,6 @@
     <script src="./js/jquery.min.js"></script>
     <script src="./js/particles.js"></script>
     <script src="./js/particles.min.js"></script>
-    <script src="./js/nice.select.min.js"></script>
     <script src="./js/index.js"></script>
     <!--particles script-->
     <script>
