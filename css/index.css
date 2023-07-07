@@ -1160,7 +1160,7 @@ button:hover .index {
     letter-spacing: 1px;
 }
 
-.blog-text p {
+.blog-text .blog-text-body {
     font-size: 18px;
     opacity: .9;
     font-weight: 400;
@@ -2957,6 +2957,7 @@ for tabs and large phones
 
 /* Style the buttons */
 .btn {
+    font-size: 16px;
     opacity: .8;
     font-weight: 200;
     padding: 5px 10px;
