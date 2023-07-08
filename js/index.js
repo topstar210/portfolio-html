@@ -5,10 +5,9 @@ $(window).on('load', function () {
   gsap.to('#header', 0, { display: "block", delay: 1 })
   gsap.to('#navigation-content', 0, { display: "none" });
   gsap.to('#navigation-content', 0, { display: "flex", delay: 1 });
-  
+
   // send email
   $("#email_submit").click(() => {
-    alert("asdfasdf")
     const username = $("input[name='name']").val();
     const useremail = $("input[name='email']").val();
     const subject = $("input[name='subject']").val();
