@@ -5,6 +5,31 @@ $(window).on('load', function () {
   gsap.to('#header', 0, { display: "block", delay: 1 })
   gsap.to('#navigation-content', 0, { display: "none" });
   gsap.to('#navigation-content', 0, { display: "flex", delay: 1 });
+  
+  // send email
+  $("#email_submit").click(() => {
+    alert("asdfasdf")
+    const username = $("input[name='name']").val();
+    const useremail = $("input[name='email']").val();
+    const subject = $("input[name='subject']").val();
+    const message = $("textarea[name='message']").val();
+    if (username != "") { alert("Please input your name"); $("input[name='name']").focus(); return; }
+    if (useremail != "") { alert("Please input your email"); $("input[name='email']").focus(); return; }
+    if (subject != "") { alert("Please input your subject"); $("input[name='subject']").focus(); return; }
+    if (message != "") { alert("Please input your message"); $("input[name='message']").focus(); return; }
+
+    Email.send({
+      Host: "smtp.elasticemail.com",
+      Username: "happycamper0210@gmail.com",
+      Password: "E62B7F2C6638283F02661693C11E3CD45C16",
+      To: 'topstar20210@gmail.com',
+      From: useremail,
+      Subject: subject,
+      Body: `Hi, Genda! This is ${username}. ${message} ....... From portfolio .......`
+    }).then(
+      message => alert(message)
+    );
+  })
 })
 $(function () {
   $('.color-panel').on("click", function (e) {
@@ -224,27 +249,3 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
-
-// send email
-$("#email_submit").click(() => {
-  const username = $("input[name='name']").val();
-  const useremail = $("input[name='email']").val();
-  const subject = $("input[name='subject']").val();
-  const message = $("textarea[name='message']").val();
-  if (username != "") { alert("Please input your name"); $("input[name='name']").focus(); return; }
-  if (useremail != "") { alert("Please input your email"); $("input[name='email']").focus(); return; }
-  if (subject != "") { alert("Please input your subject"); $("input[name='subject']").focus(); return; }
-  if (message != "") { alert("Please input your message"); $("input[name='message']").focus(); return; }
-
-  Email.send({
-    Host: "smtp.elasticemail.com",
-    Username: "happycamper0210@gmail.com",
-    Password: "E62B7F2C6638283F02661693C11E3CD45C16",
-    To: 'topstar20210@gmail.com',
-    From: useremail,
-    Subject: subject,
-    Body: `Hi, Genda! This is ${username}. ${message} ....... From portfolio .......`
-  }).then(
-    message => alert(message)
-  );
-})
