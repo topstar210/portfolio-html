@@ -12,10 +12,10 @@ $(window).on('load', function () {
     let useremail = $("input[name='email']").val();
     let subject = $("input[name='subject']").val();
     let message = $("textarea[name='message']").val();
-    if (username != "") { alert("Please input your name"); $("input[name='name']").focus(); return; }
-    if (useremail != "") { alert("Please input your email"); $("input[name='email']").focus(); return; }
-    if (subject != "") { alert("Please input your subject"); $("input[name='subject']").focus(); return; }
-    if (message != "") { alert("Please input your message"); $("input[name='message']").focus(); return; }
+    if (username === "") { alert("Please input your name"); $("input[name='name']").focus(); return; }
+    if (useremail === "") { alert("Please input your email"); $("input[name='email']").focus(); return; }
+    if (subject === "") { alert("Please input your subject"); $("input[name='subject']").focus(); return; }
+    if (message === "") { alert("Please input your message"); $("input[name='message']").focus(); return; }
 
     Email.send({
       Host: "smtp.elasticemail.com",
