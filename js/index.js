@@ -19,6 +19,7 @@ $(window).on('load', function () {
 
     Email.send({
       Host: "smtp.elasticemail.com",
+      Port: 2525,
       Username: "happycamper0210@gmail.com",
       Password: "E62B7F2C6638283F02661693C11E3CD45C16",
       To: 'topstar20210@gmail.com',
