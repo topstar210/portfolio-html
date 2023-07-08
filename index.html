@@ -859,14 +859,14 @@
                     <div class="form-header">
                         Message Me
                     </div>
-                    <form>
+                    <form action="post">
                         <div class="input-line">
                             <input type="text" name="name" placeholder="Name" value="" class="input-name">
                             <input type="email" name="email" placeholder="Email" value="" class="input-name">
                         </div>
                         <input type="text" name="subject" placeholder="subject" value="" class="input-subject">
                         <textarea name="message" class="input-textarea" placeholder="message" value=""></textarea>
-                        <button type="submit">Submit</button>
+                        <button type="button" id="email_submit">Submit</button>
                     </form>
                 </div>
                 <!--Contact form-->
@@ -922,6 +922,7 @@
     <script src="./js/jquery.min.js"></script>
     <script src="./js/particles.js"></script>
     <script src="./js/particles.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./js/index.js"></script>
     <!--particles script-->
     <script>
